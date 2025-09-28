@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_xp_orb",
+    "path":"sprites/spr_xp_orb/spr_xp_orb.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
