@@ -5,6 +5,7 @@
 /// @DnDArgument : "expr" "obj_player.arrow_damage"
 /// @DnDArgument : "expr_1" "obj_player.arrow_penetration"
 /// @DnDArgument : "expr_2" "obj_player.arrow_range"
+/// @DnDArgument : "expr_3" "8"
 /// @DnDArgument : "expr_4" "penetration"
 /// @DnDArgument : "var" "damage"
 /// @DnDArgument : "var_1" "penetration"
@@ -14,7 +15,7 @@
 damage = obj_player.arrow_damage;
 penetration = obj_player.arrow_penetration;
 range_left = obj_player.arrow_range;
-arrow_speed = 0;
+arrow_speed = 8;
 hits_left = penetration;
 
 /// @DnDAction : YoYo Games.Instances.If_Instance_Exists

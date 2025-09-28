@@ -1,13 +1,16 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 08821F90
-/// @DnDInput : 2
+/// @DnDInput : 3
 /// @DnDArgument : "expr" "other.hp - damage"
 /// @DnDArgument : "expr_1" "hits_left - 1"
+/// @DnDArgument : "expr_2" "5"
 /// @DnDArgument : "var" "other.hp"
 /// @DnDArgument : "var_1" "hits_left"
+/// @DnDArgument : "var_2" "other.flash_timer"
 other.hp = other.hp - damage;
 hits_left = hits_left - 1;
+other.flash_timer = 5;
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1

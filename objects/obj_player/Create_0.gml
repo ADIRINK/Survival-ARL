@@ -2,7 +2,7 @@
 /// @DnDVersion : 1
 /// @DnDHash : 34433D75
 /// @DnDComment : Player vars
-/// @DnDInput : 7
+/// @DnDInput : 8
 /// @DnDArgument : "expr" "100"
 /// @DnDArgument : "expr_1" "100"
 /// @DnDArgument : "expr_2" "3"
@@ -14,6 +14,7 @@
 /// @DnDArgument : "var_4" "xp_needed"
 /// @DnDArgument : "var_5" "player_level"
 /// @DnDArgument : "var_6" "gold"
+/// @DnDArgument : "var_7" "flash_timer"
 hp = 100;
 max_hp = 100;
 move_speed = 3;
@@ -21,6 +22,7 @@ xp = 0;
 xp_needed = 10;
 player_level = 0;
 gold = 0;
+flash_timer = 0;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
