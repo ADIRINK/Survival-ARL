@@ -4,6 +4,12 @@
 /// @DnDArgument : "speed" "arrow_speed"
 speed = arrow_speed;
 
+/// @DnDAction : YoYo Games.Instances.Sprite_Rotate
+/// @DnDVersion : 1
+/// @DnDHash : 2B46157B
+/// @DnDArgument : "angle" "direction"
+image_angle = direction;
+
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 0BA649F9

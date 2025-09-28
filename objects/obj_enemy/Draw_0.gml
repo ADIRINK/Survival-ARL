@@ -14,8 +14,9 @@ if(flash_timer > 0){	/// @DnDAction : YoYo Games.Drawing.Set_Alpha
 	/// @DnDVersion : 1
 	/// @DnDHash : 68270F9C
 	/// @DnDParent : 79FD31C8
-	draw_set_colour($FFFFFFFF & $ffffff);
-	var l68270F9C_0=($FFFFFFFF >> 24);
+	/// @DnDArgument : "color" "$FFFF00FF"
+	draw_set_colour($FFFF00FF & $ffffff);
+	var l68270F9C_0=($FFFF00FF >> 24);
 	draw_set_alpha(l68270F9C_0 / $ff);}
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Self

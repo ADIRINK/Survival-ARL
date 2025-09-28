@@ -16,9 +16,9 @@ draw_rectangle(0, 0, room_width, room_height, 1);
 /// @DnDAction : YoYo Games.Drawing.Set_Color
 /// @DnDVersion : 1
 /// @DnDHash : 70484F70
-/// @DnDArgument : "color" "$FF000000"
-draw_set_colour($FF000000 & $ffffff);
-var l70484F70_0=($FF000000 >> 24);
+/// @DnDArgument : "color" "$FF424242"
+draw_set_colour($FF424242 & $ffffff);
+var l70484F70_0=($FF424242 >> 24);
 draw_set_alpha(l70484F70_0 / $ff);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Rectangle
@@ -40,34 +40,13 @@ draw_set_alpha(l09BB8E3B_0 / $ff);
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
 /// @DnDHash : 3C192938
+/// @DnDArgument : "x" "room_width/2"
 /// @DnDArgument : "y" "y-180"
 /// @DnDArgument : "caption" ""LEVEL UP!""
-draw_text(0, y-180, string("LEVEL UP!") + "");
+draw_text(room_width/2, y-180, string("LEVEL UP!") + "");
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 4630BFC5
+/// @DnDDisabled : 1
 /// @DnDArgument : "code" "// Draw three upgrade options$(13_10)var upgrade_names = ["Extra Arrow", "Faster Attack", "Damage Up", "More Range", "Penetration", "Crit Chance", "Speed Up", "Heal & HP"];$(13_10)$(13_10)// Button 1$(13_10)if (selected == 0) draw_set_color(c_yellow);$(13_10)else draw_set_color(c_gray);$(13_10)draw_rectangle(x - 220, y - 100, x - 40, y + 150, false);$(13_10)draw_set_color(c_white);$(13_10)draw_text(x - 130, y, upgrade_names[upgrade_1]);$(13_10)$(13_10)// Button 2$(13_10)if (selected == 1) draw_set_color(c_yellow);$(13_10)else draw_set_color(c_gray);$(13_10)draw_rectangle(x - 90, y - 100, x + 90, y + 150, false);$(13_10)draw_set_color(c_white);$(13_10)draw_text(x, y, upgrade_names[upgrade_2]);$(13_10)$(13_10)// Button 3$(13_10)if (selected == 2) draw_set_color(c_yellow);$(13_10)else draw_set_color(c_gray);$(13_10)draw_rectangle(x + 40, y - 100, x + 220, y + 150, false);$(13_10)draw_set_color(c_white);$(13_10)draw_text(x + 130, y, upgrade_names[upgrade_3]);"
-// Draw three upgrade options
-var upgrade_names = ["Extra Arrow", "Faster Attack", "Damage Up", "More Range", "Penetration", "Crit Chance", "Speed Up", "Heal & HP"];
-
-// Button 1
-if (selected == 0) draw_set_color(c_yellow);
-else draw_set_color(c_gray);
-draw_rectangle(x - 220, y - 100, x - 40, y + 150, false);
-draw_set_color(c_white);
-draw_text(x - 130, y, upgrade_names[upgrade_1]);
-
-// Button 2
-if (selected == 1) draw_set_color(c_yellow);
-else draw_set_color(c_gray);
-draw_rectangle(x - 90, y - 100, x + 90, y + 150, false);
-draw_set_color(c_white);
-draw_text(x, y, upgrade_names[upgrade_2]);
-
-// Button 3
-if (selected == 2) draw_set_color(c_yellow);
-else draw_set_color(c_gray);
-draw_rectangle(x + 40, y - 100, x + 220, y + 150, false);
-draw_set_color(c_white);
-draw_text(x + 130, y, upgrade_names[upgrade_3]);

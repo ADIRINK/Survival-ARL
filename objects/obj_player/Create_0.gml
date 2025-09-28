@@ -32,7 +32,7 @@ flash_timer = 0;
 /// @DnDArgument : "expr" "30"
 /// @DnDArgument : "expr_2" "1"
 /// @DnDArgument : "expr_3" "200"
-/// @DnDArgument : "expr_4" "10"
+/// @DnDArgument : "expr_4" "5"
 /// @DnDArgument : "expr_5" "1"
 /// @DnDArgument : "expr_6" "0.1"
 /// @DnDArgument : "var" "attack_cooldown"
@@ -47,7 +47,7 @@ attack_cooldown = 30;
 attack_timer = 0;
 projectile_count = 1;
 arrow_range = 200;
-arrow_damage = 10;
+arrow_damage = 5;
 arrow_penetration = 1;
 crit_chance = 0.1;
 crit_multiplier = 0;
