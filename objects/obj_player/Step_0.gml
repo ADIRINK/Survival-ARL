@@ -116,24 +116,43 @@ if(flash_timer > 0){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDParent : 268C6E11
 	/// @DnDArgument : "expr" "flash_timer - 1"
 	/// @DnDArgument : "var" "flash_timer"
-	flash_timer = flash_timer - 1;
+	flash_timer = flash_timer - 1;}
 
-	/// @DnDAction : YoYo Games.Drawing.Set_Color
-	/// @DnDVersion : 1
-	/// @DnDHash : 72EAFD2F
-	/// @DnDParent : 268C6E11
-	/// @DnDArgument : "color" "$A80000FF"
-	draw_set_colour($A80000FF & $ffffff);
-	var l72EAFD2F_0=($A80000FF >> 24);
-	draw_set_alpha(l72EAFD2F_0 / $ff);}
-
-/// @DnDAction : YoYo Games.Common.Else
+/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
-/// @DnDHash : 43697D2C
-else{	/// @DnDAction : YoYo Games.Drawing.Set_Color
+/// @DnDHash : 17C730DD
+/// @DnDArgument : "var" "xp"
+/// @DnDArgument : "op" "4"
+/// @DnDArgument : "value" "xp_needed"
+if(xp >= xp_needed){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
-	/// @DnDHash : 3887C980
-	/// @DnDParent : 43697D2C
-	draw_set_colour($FFFFFFFF & $ffffff);
-	var l3887C980_0=($FFFFFFFF >> 24);
-	draw_set_alpha(l3887C980_0 / $ff);}
+	/// @DnDHash : 5753319E
+	/// @DnDInput : 3
+	/// @DnDParent : 17C730DD
+	/// @DnDArgument : "expr" "xp - xp_needed"
+	/// @DnDArgument : "expr_1" "player_level + 1"
+	/// @DnDArgument : "expr_2" "xp_needed + 5"
+	/// @DnDArgument : "var" "xp"
+	/// @DnDArgument : "var_1" "player_level"
+	/// @DnDArgument : "var_2" "xp_needed"
+	xp = xp - xp_needed;
+	player_level = player_level + 1;
+	xp_needed = xp_needed + 5;
+
+	/// @DnDAction : YoYo Games.Instances.Create_Instance
+	/// @DnDVersion : 1
+	/// @DnDHash : 0F91FF5D
+	/// @DnDParent : 17C730DD
+	/// @DnDArgument : "xpos" "room_width/2"
+	/// @DnDArgument : "ypos" "room_height/2"
+	/// @DnDArgument : "objectid" "obj_level_menu"
+	/// @DnDSaveInfo : "objectid" "obj_level_menu"
+	instance_create_layer(room_width/2, room_height/2, "Instances", obj_level_menu);
+
+	/// @DnDAction : YoYo Games.Common.Set_Global
+	/// @DnDVersion : 1
+	/// @DnDHash : 29B740DE
+	/// @DnDParent : 17C730DD
+	/// @DnDArgument : "value" "true"
+	/// @DnDArgument : "var" "game_paused"
+	global.game_paused = true;}
