@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_chest",
+  "%Name":"obj_item",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_chest",
+  "name":"obj_item",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_chest",
-    "path":"sprites/spr_chest/spr_chest.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
