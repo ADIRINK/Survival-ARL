@@ -59,9 +59,9 @@ var l0A255C9D_0;l0A255C9D_0 = mouse_check_button_pressed(mb_left);if (l0A255C9
 	if(selected == 0){	/// @DnDAction : YoYo Games.Common.Execute_Code
 		/// @DnDVersion : 1
 		/// @DnDHash : 44D197F8
-		/// @DnDDisabled : 1
 		/// @DnDParent : 39B1FC7A
-		/// @DnDArgument : "code" "apply_upgrade(upgrade_1)"}
+		/// @DnDArgument : "code" "apply_upgrade(upgrade_1)"
+		apply_upgrade(upgrade_1)}
 
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
@@ -72,9 +72,9 @@ var l0A255C9D_0;l0A255C9D_0 = mouse_check_button_pressed(mb_left);if (l0A255C9
 	if(selected == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 		/// @DnDVersion : 1
 		/// @DnDHash : 79A6C9F4
-		/// @DnDDisabled : 1
 		/// @DnDParent : 10279E29
-		/// @DnDArgument : "code" "apply_upgrade(upgrade_2)"}
+		/// @DnDArgument : "code" "apply_upgrade(upgrade_2)"
+		apply_upgrade(upgrade_2)}
 
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
@@ -85,6 +85,6 @@ var l0A255C9D_0;l0A255C9D_0 = mouse_check_button_pressed(mb_left);if (l0A255C9
 	if(selected == 2){	/// @DnDAction : YoYo Games.Common.Execute_Code
 		/// @DnDVersion : 1
 		/// @DnDHash : 78EC4CFE
-		/// @DnDDisabled : 1
 		/// @DnDParent : 3F438310
-		/// @DnDArgument : "code" "apply_upgrade(upgrade_3)"}}
+		/// @DnDArgument : "code" "apply_upgrade(upgrade_3)"
+		apply_upgrade(upgrade_3)}}
