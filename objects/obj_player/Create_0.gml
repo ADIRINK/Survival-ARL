@@ -7,6 +7,7 @@
 /// @DnDArgument : "expr_1" "100"
 /// @DnDArgument : "expr_2" "3"
 /// @DnDArgument : "expr_4" "10"
+/// @DnDArgument : "expr_6" "25"
 /// @DnDArgument : "expr_8" "ds_list_create();"
 /// @DnDArgument : "var" "hp"
 /// @DnDArgument : "var_1" "max_hp"
@@ -23,7 +24,7 @@ move_speed = 3;
 xp = 0;
 xp_needed = 10;
 player_level = 0;
-gold = 0;
+gold = 25;
 flash_timer = 0;
 items_collected = ds_list_create();;
 
@@ -32,10 +33,10 @@ items_collected = ds_list_create();;
 /// @DnDHash : 4746CB52
 /// @DnDComment : Weapon vars
 /// @DnDInput : 8
-/// @DnDArgument : "expr" "30"
+/// @DnDArgument : "expr" "60"
 /// @DnDArgument : "expr_2" "1"
-/// @DnDArgument : "expr_3" "400"
-/// @DnDArgument : "expr_4" "5"
+/// @DnDArgument : "expr_3" "200"
+/// @DnDArgument : "expr_4" "10"
 /// @DnDArgument : "expr_5" "1"
 /// @DnDArgument : "expr_6" "0.1"
 /// @DnDArgument : "var" "attack_cooldown"
@@ -46,11 +47,11 @@ items_collected = ds_list_create();;
 /// @DnDArgument : "var_5" "arrow_penetration"
 /// @DnDArgument : "var_6" "crit_chance"
 /// @DnDArgument : "var_7" "crit_multiplier"
-attack_cooldown = 30;
+attack_cooldown = 60;
 attack_timer = 0;
 projectile_count = 1;
-arrow_range = 400;
-arrow_damage = 5;
+arrow_range = 200;
+arrow_damage = 10;
 arrow_penetration = 1;
 crit_chance = 0.1;
 crit_multiplier = 0;

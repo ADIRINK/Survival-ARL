@@ -1,7 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 1A3D0296
-/// @DnDInput : 10
+/// @DnDInput : 11
 /// @DnDArgument : "expr" "600"
 /// @DnDArgument : "expr_1" "400"
 /// @DnDArgument : "expr_2" "180"
@@ -12,6 +12,7 @@
 /// @DnDArgument : "expr_7" "irandom(7)"
 /// @DnDArgument : "expr_8" "irandom(7)"
 /// @DnDArgument : "expr_9" "irandom(7)"
+/// @DnDArgument : "expr_10" "true"
 /// @DnDArgument : "var" "menu_width"
 /// @DnDArgument : "var_1" "menu_height"
 /// @DnDArgument : "var_2" "button_widht"
@@ -22,6 +23,7 @@
 /// @DnDArgument : "var_7" "upgrade_1"
 /// @DnDArgument : "var_8" "upgrade_2"
 /// @DnDArgument : "var_9" "upgrade_3"
+/// @DnDArgument : "var_10" "obj_room_controller.game_paused"
 menu_width = 600;
 menu_height = 400;
 button_widht = 180;
@@ -32,6 +34,7 @@ y = room_height/2;
 upgrade_1 = irandom(7);
 upgrade_2 = irandom(7);
 upgrade_3 = irandom(7);
+obj_room_controller.game_paused = true;
 
 /// @DnDAction : YoYo Games.Loops.While_Loop
 /// @DnDVersion : 1
