@@ -1,22 +1,25 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 4E07ACCC
-/// @DnDInput : 5
+/// @DnDInput : 6
 /// @DnDArgument : "expr" "obj_player.arrow_damage"
 /// @DnDArgument : "expr_1" "obj_player.arrow_penetration"
 /// @DnDArgument : "expr_2" "obj_player.arrow_range"
 /// @DnDArgument : "expr_3" "8"
 /// @DnDArgument : "expr_4" "penetration"
+/// @DnDArgument : "expr_5" "ds_list_create()"
 /// @DnDArgument : "var" "damage"
 /// @DnDArgument : "var_1" "penetration"
 /// @DnDArgument : "var_2" "range_left"
 /// @DnDArgument : "var_3" "arrow_speed"
 /// @DnDArgument : "var_4" "hits_left"
+/// @DnDArgument : "var_5" "hit_enemies"
 damage = obj_player.arrow_damage;
 penetration = obj_player.arrow_penetration;
 range_left = obj_player.arrow_range;
 arrow_speed = 8;
 hits_left = penetration;
+hit_enemies = ds_list_create();
 
 /// @DnDAction : YoYo Games.Instances.If_Instance_Exists
 /// @DnDVersion : 1

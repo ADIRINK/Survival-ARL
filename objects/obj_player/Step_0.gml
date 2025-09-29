@@ -131,15 +131,25 @@ if(attack_timer <= 0){	/// @DnDAction : YoYo Games.Instances.If_Instance_Exist
 		/// @DnDArgument : "var" "nearest_enemy"
 		nearest_enemy = instance_nearest(x, y, obj_enemy);
 	
-		/// @DnDAction : YoYo Games.Instances.Create_Instance
+		/// @DnDAction : YoYo Games.Loops.Repeat
 		/// @DnDVersion : 1
-		/// @DnDHash : 32DE2DDF
+		/// @DnDHash : 73A90F37
 		/// @DnDParent : 6FD510C5
-		/// @DnDArgument : "xpos" "x"
-		/// @DnDArgument : "ypos" "y"
-		/// @DnDArgument : "objectid" "obj_arrow"
-		/// @DnDSaveInfo : "objectid" "obj_arrow"
-		instance_create_layer(x, y, "Instances", obj_arrow);
+		/// @DnDArgument : "times" "projectile_count"
+		repeat(projectile_count){	/// @DnDAction : YoYo Games.Common.Execute_Code
+			/// @DnDVersion : 1
+			/// @DnDHash : 748B7703
+			/// @DnDParent : 73A90F37
+			/// @DnDArgument : "code" "for (var i = 0; i < projectile_count; i++) {$(13_10)    var arrow = instance_create_layer(x, y, "Instances", obj_arrow);$(13_10)    // Add slight angle variation$(13_10)    if (projectile_count > 1) {$(13_10)        var spread = 7.5; // degrees of spread$(13_10)        var angle_offset = (i - (projectile_count - 1) / 2) * spread;$(13_10)        arrow.direction += angle_offset;$(13_10)    }$(13_10)}"
+			for (var i = 0; i < projectile_count; i++) {
+			    var arrow = instance_create_layer(x, y, "Instances", obj_arrow);
+			    // Add slight angle variation
+			    if (projectile_count > 1) {
+			        var spread = 7.5; // degrees of spread
+			        var angle_offset = (i - (projectile_count - 1) / 2) * spread;
+			        arrow.direction += angle_offset;
+			    }
+			}}
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -204,13 +214,11 @@ if(xp >= xp_needed){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDSaveInfo : "objectid" "obj_level_menu"
 	instance_create_layer(room_width/2, room_height/2, "Instances", obj_level_menu);
 
-	/// @DnDAction : YoYo Games.Common.Set_Global
+	/// @DnDAction : YoYo Games.Timelines.Speed_Timeline
 	/// @DnDVersion : 1
-	/// @DnDHash : 29B740DE
+	/// @DnDHash : 0106D5AB
 	/// @DnDParent : 17C730DD
-	/// @DnDArgument : "value" "true"
-	/// @DnDArgument : "var" "game_paused"
-	global.game_paused = true;}
+	timeline_speed = 0;}
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1

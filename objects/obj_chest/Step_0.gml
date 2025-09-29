@@ -16,11 +16,11 @@ if(distance_to_object(obj_player) < 50 && !opened){	/// @DnDAction : YoYo Game
 		/// @DnDHash : 34D4FB66
 		/// @DnDInput : 2
 		/// @DnDParent : 23ABF342
-		/// @DnDArgument : "expr" "-cost"
+		/// @DnDArgument : "expr" "obj_player.gold-cost"
 		/// @DnDArgument : "expr_1" "true"
 		/// @DnDArgument : "var" "obj_player.gold"
 		/// @DnDArgument : "var_1" "opened"
-		obj_player.gold = -cost;
+		obj_player.gold = obj_player.gold-cost;
 		opened = true;
 	
 		/// @DnDAction : YoYo Games.Instances.Create_Instance

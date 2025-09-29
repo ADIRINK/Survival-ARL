@@ -29,6 +29,7 @@
     {"name":"spr_chest","order":1,"path":"sprites/spr_chest/spr_chest.yy",},
     {"name":"spr_enemy","order":2,"path":"sprites/spr_enemy/spr_enemy.yy",},
     {"name":"spr_gold","order":3,"path":"sprites/spr_gold/spr_gold.yy",},
+    {"name":"spr_item","order":6,"path":"sprites/spr_item/spr_item.yy",},
     {"name":"spr_player","order":4,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"spr_xp_orb","order":5,"path":"sprites/spr_xp_orb/spr_xp_orb.yy",},
   ],

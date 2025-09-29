@@ -17,6 +17,16 @@ speed_bonus = 0;
 hp_bonus = 0;
 range_bonus = 0;
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 13BEB1C2
+/// @DnDInput : 2
+/// @DnDArgument : "expr_1" "y"
+/// @DnDArgument : "var" "float_timer"
+/// @DnDArgument : "var_1" "start_y"
+float_timer = 0;
+start_y = y;
+
 /// @DnDAction : YoYo Games.Switch.Switch
 /// @DnDVersion : 1
 /// @DnDHash : 4B92BD5F

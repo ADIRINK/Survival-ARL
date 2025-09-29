@@ -51,6 +51,7 @@
     {"id":{"name":"spr_chest","path":"sprites/spr_chest/spr_chest.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_gold","path":"sprites/spr_gold/spr_gold.yy",},},
+    {"id":{"name":"spr_item","path":"sprites/spr_item/spr_item.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_xp_orb","path":"sprites/spr_xp_orb/spr_xp_orb.yy",},},
   ],
