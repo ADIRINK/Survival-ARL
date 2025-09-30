@@ -1,22 +1,39 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
+/// @DnDHash : 2DB48D32
+/// @DnDInput : 4
+/// @DnDArgument : "expr" "display_get_gui_width()"
+/// @DnDArgument : "expr_1" "display_get_gui_height()"
+/// @DnDArgument : "expr_2" "gw/2"
+/// @DnDArgument : "expr_3" "gh/2"
+/// @DnDArgument : "var" "gw"
+/// @DnDArgument : "var_1" "gh"
+/// @DnDArgument : "var_2" "cx"
+/// @DnDArgument : "var_3" "cy"
+gw = display_get_gui_width();
+gh = display_get_gui_height();
+cx = gw/2;
+cy = gh/2;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
 /// @DnDHash : 611E9677
 /// @DnDInput : 3
-/// @DnDArgument : "expr" "mouse_x"
-/// @DnDArgument : "expr_1" "mouse_y"
+/// @DnDArgument : "expr" "device_mouse_x_to_gui(0)"
+/// @DnDArgument : "expr_1" "device_mouse_y_to_gui(0)"
 /// @DnDArgument : "expr_2" "-1"
 /// @DnDArgument : "var" "mx"
 /// @DnDArgument : "var_1" "my"
 /// @DnDArgument : "var_2" "selected"
-mx = mouse_x;
-my = mouse_y;
+mx = device_mouse_x_to_gui(0);
+my = device_mouse_y_to_gui(0);
 selected = -1;
 
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 2DEA7EB5
-/// @DnDArgument : "expr" "mx > x - 220 && mx < x - 40 && my > y - 100 && my < y + 150"
-if(mx > x - 220 && mx < x - 40 && my > y - 100 && my < y + 150){	/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDArgument : "expr" "mx > cx - 360 && mx < cx - 180 && my > cy - 100 && my < cy + 150"
+if(mx > cx - 360 && mx < cx - 180 && my > cy - 100 && my < cy + 150){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 78552754
 	/// @DnDParent : 2DEA7EB5
@@ -26,8 +43,8 @@ if(mx > x - 220 && mx < x - 40 && my > y - 100 && my < y + 150){	/// @DnDActio
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 1AD6BA1E
-/// @DnDArgument : "expr" "mx > x - 90 && mx < x + 90 && my > y - 100 && my < y + 150"
-if(mx > x - 90 && mx < x + 90 && my > y - 100 && my < y + 150){	/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDArgument : "expr" "mx > cx - 90 && mx < cx + 90 && my > cy - 100 && my < cy + 150"
+if(mx > cx - 90 && mx < cx + 90 && my > cy - 100 && my < cy + 150){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 5E486082
 	/// @DnDParent : 1AD6BA1E
@@ -38,8 +55,8 @@ if(mx > x - 90 && mx < x + 90 && my > y - 100 && my < y + 150){	/// @DnDAction
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 4BC8E767
-/// @DnDArgument : "expr" "mx > x + 40 && mx < x + 220 && my > y - 100 && my < y + 150"
-if(mx > x + 40 && mx < x + 220 && my > y - 100 && my < y + 150){	/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDArgument : "expr" "mx > cx + 180  && mx < cx + 360 && my > cy - 100 && my < cy + 150"
+if(mx > cx + 180  && mx < cx + 360 && my > cy - 100 && my < cy + 150){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 6E19B3AA
 	/// @DnDParent : 4BC8E767

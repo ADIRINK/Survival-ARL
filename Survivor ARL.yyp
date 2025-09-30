@@ -40,6 +40,8 @@
   },
   "name":"Survivor ARL",
   "resources":[
+    {"id":{"name":"fnt_def","path":"fonts/fnt_def/fnt_def.yy",},},
+    {"id":{"name":"fnt_timer","path":"fonts/fnt_timer/fnt_timer.yy",},},
     {"id":{"name":"obj_arrow","path":"objects/obj_arrow/obj_arrow.yy",},},
     {"id":{"name":"obj_boss_projectile","path":"objects/obj_boss_projectile/obj_boss_projectile.yy",},},
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},},

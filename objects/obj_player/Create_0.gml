@@ -33,18 +33,21 @@ items_collected = ds_list_create();;
 /// @DnDVersion : 1
 /// @DnDHash : 551C0522
 /// @DnDComment : Weapon system
-/// @DnDInput : 4
+/// @DnDInput : 5
 /// @DnDArgument : "expr" "1"
 /// @DnDArgument : "expr_2" "1"
 /// @DnDArgument : "expr_3" "0.03"
+/// @DnDArgument : "expr_4" "20"
 /// @DnDArgument : "var" "weapon_type"
 /// @DnDArgument : "var_1" "attack_timer"
 /// @DnDArgument : "var_2" "projectile_count"
 /// @DnDArgument : "var_3" "crit_chance"
+/// @DnDArgument : "var_4" "knockback"
 weapon_type = 1;
 attack_timer = 0;
 projectile_count = 1;
 crit_chance = 0.03;
+knockback = 20;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1

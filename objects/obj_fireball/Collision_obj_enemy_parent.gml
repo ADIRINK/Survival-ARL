@@ -100,22 +100,44 @@ if(ds_list_find_index(hit_enemies, other.id) == -1){	/// @DnDAction : YoYo Gam
 		if(dist <= other.aoe_radius){	/// @DnDAction : YoYo Games.Common.Variable
 			/// @DnDVersion : 1
 			/// @DnDHash : 33324DD4
-			/// @DnDInput : 4
+			/// @DnDInput : 2
 			/// @DnDParent : 26B38B6B
 			/// @DnDArgument : "expr" "point_direction(other.x, other.y, x, y)"
-			/// @DnDArgument : "expr_1" "(other.aoe_radius - dist) / other.aoe_radius * 20"
-			/// @DnDArgument : "expr_2" "lengthdir_x(knock_force, knock_dir)"
-			/// @DnDArgument : "expr_relative_2" "1"
-			/// @DnDArgument : "expr_3" "lengthdir_y(knock_force, knock_dir)"
-			/// @DnDArgument : "expr_relative_3" "1"
+			/// @DnDArgument : "expr_1" "(other.aoe_radius - dist) / other.aoe_radius * obj_player.knockback"
 			/// @DnDArgument : "var" "knock_dir"
 			/// @DnDArgument : "var_1" "knock_force"
-			/// @DnDArgument : "var_2" "x"
-			/// @DnDArgument : "var_3" "y"
 			knock_dir = point_direction(other.x, other.y, x, y);
-			knock_force = (other.aoe_radius - dist) / other.aoe_radius * 20;
-			x += lengthdir_x(knock_force, knock_dir);
-			y += lengthdir_y(knock_force, knock_dir);
+			knock_force = (other.aoe_radius - dist) / other.aoe_radius * obj_player.knockback;
+		
+			/// @DnDAction : YoYo Games.Common.If_Expression
+			/// @DnDVersion : 1
+			/// @DnDHash : 130EA1EE
+			/// @DnDParent : 26B38B6B
+			/// @DnDArgument : "expr" "!variable_instance_exists(id, "knockback_x")"
+			if(!variable_instance_exists(id, "knockback_x")){	/// @DnDAction : YoYo Games.Common.Variable
+				/// @DnDVersion : 1
+				/// @DnDHash : 0B315993
+				/// @DnDInput : 2
+				/// @DnDParent : 130EA1EE
+				/// @DnDArgument : "var" "knockback_x"
+				/// @DnDArgument : "var_1" "knockback_y"
+				knockback_x = 0;
+				knockback_y = 0;}
+		
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 69BD4316
+			/// @DnDInput : 3
+			/// @DnDParent : 26B38B6B
+			/// @DnDArgument : "expr" "lengthdir_x(knock_force, knock_dir)"
+			/// @DnDArgument : "expr_1" "lengthdir_y(knock_force, knock_dir)"
+			/// @DnDArgument : "expr_2" "10"
+			/// @DnDArgument : "var" "knockback_x"
+			/// @DnDArgument : "var_1" "knockback_y"
+			/// @DnDArgument : "var_2" "knockback_timer"
+			knockback_x = lengthdir_x(knock_force, knock_dir);
+			knockback_y = lengthdir_y(knock_force, knock_dir);
+			knockback_timer = 10;
 		
 			/// @DnDAction : YoYo Games.Instances.Create_Instance
 			/// @DnDVersion : 1

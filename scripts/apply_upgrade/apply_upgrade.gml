@@ -120,5 +120,18 @@ function apply_upgrade(upgrade_type) {	/// @DnDAction : YoYo Games.Common.Appl
 				/// @DnDArgument : "var" "max_hp"
 				/// @DnDArgument : "var_1" "hp"
 				max_hp = max_hp + 15;
-				hp = hp + 15;	break;}
+				hp = hp + 15;	break;
+		
+			/// @DnDAction : YoYo Games.Switch.Case
+			/// @DnDVersion : 1
+			/// @DnDHash : 699D1FFE
+			/// @DnDParent : 658A4552
+			/// @DnDArgument : "const" "8"
+			case 8:	/// @DnDAction : YoYo Games.Common.Variable
+				/// @DnDVersion : 1
+				/// @DnDHash : 2F3E6C71
+				/// @DnDParent : 699D1FFE
+				/// @DnDArgument : "expr" "knockback * 1.5"
+				/// @DnDArgument : "var" "knockback"
+				knockback = knockback * 1.5;	break;}
 	}}

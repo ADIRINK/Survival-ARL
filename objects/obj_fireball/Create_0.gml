@@ -58,6 +58,22 @@ var l73852C24_0 = false;l73852C24_0 = instance_exists(obj_enemy_parent);if(l73
 			/// @DnDArgument : "var" "target"
 			/// @DnDArgument : "var_1" "direction"
 			target = instance_nearest(obj_player.x, obj_player.y, obj_boss);
+			direction = point_direction(x, y, target.x, target.y);}
+	
+		/// @DnDAction : YoYo Games.Common.Else
+		/// @DnDVersion : 1
+		/// @DnDHash : 3BD620FD
+		/// @DnDParent : 5288F78F
+		else{	/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 4BE004C8
+			/// @DnDInput : 2
+			/// @DnDParent : 3BD620FD
+			/// @DnDArgument : "expr" "instance_nearest(obj_player.x, obj_player.y, obj_enemy_parent)"
+			/// @DnDArgument : "expr_1" "point_direction(x, y, target.x, target.y)"
+			/// @DnDArgument : "var" "target"
+			/// @DnDArgument : "var_1" "direction"
+			target = instance_nearest(obj_player.x, obj_player.y, obj_enemy_parent);
 			direction = point_direction(x, y, target.x, target.y);}}
 
 	/// @DnDAction : YoYo Games.Common.Else
