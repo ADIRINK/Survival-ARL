@@ -55,9 +55,9 @@ var l6CB1719B_0 = false;l6CB1719B_0 = instance_exists(obj_player);if(l6CB1719B
 		/// @DnDVersion : 1
 		/// @DnDHash : 628832D8
 		/// @DnDParent : 7FD828BB
-		/// @DnDArgument : "code" "// Push away from ALL nearby enemies$(13_10)with (obj_enemy) {$(13_10)    if (id != other.id) {  // Don't check self$(13_10)        var dist = point_distance(x, y, other.x, other.y);$(13_10)        if (dist < 16 && dist > 0) {  // If too close$(13_10)            var push_strength = (16 - dist) / 16;  // Stronger push when closer$(13_10)            var push_dir = point_direction(other.x, other.y, x, y);$(13_10)            x += lengthdir_x(push_strength * 2, push_dir);$(13_10)            y += lengthdir_y(push_strength * 2, push_dir);$(13_10)        }$(13_10)    }$(13_10)}"
+		/// @DnDArgument : "code" "// Push away from ALL nearby enemies$(13_10)with (obj_enemy_parent) {$(13_10)    if (id != other.id) {  // Don't check self$(13_10)        var dist = point_distance(x, y, other.x, other.y);$(13_10)        if (dist < 16 && dist > 0) {  // If too close$(13_10)            var push_strength = (16 - dist) / 16;  // Stronger push when closer$(13_10)            var push_dir = point_direction(other.x, other.y, x, y);$(13_10)            x += lengthdir_x(push_strength * 2, push_dir);$(13_10)            y += lengthdir_y(push_strength * 2, push_dir);$(13_10)        }$(13_10)    }$(13_10)}"
 		// Push away from ALL nearby enemies
-		with (obj_enemy) {
+		with (obj_enemy_parent) {
 		    if (id != other.id) {  // Don't check self
 		        var dist = point_distance(x, y, other.x, other.y);
 		        if (dist < 16 && dist > 0) {  // If too close

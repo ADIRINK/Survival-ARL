@@ -2,8 +2,8 @@
 /// @DnDVersion : 1
 /// @DnDHash : 3BA2874B
 /// @DnDInput : 8
-/// @DnDArgument : "expr" "20"
-/// @DnDArgument : "expr_1" "20"
+/// @DnDArgument : "expr" "15"
+/// @DnDArgument : "expr_1" "15"
 /// @DnDArgument : "expr_2" "1 + (obj_player.player_level * 0.1)"
 /// @DnDArgument : "expr_3" "5 + (obj_player.player_level * 2)"
 /// @DnDArgument : "expr_4" "60"
@@ -16,8 +16,8 @@
 /// @DnDArgument : "var_5" "attack_timer"
 /// @DnDArgument : "var_6" "flash_timer"
 /// @DnDArgument : "var_7" "hp"
-base_hp = 20;
-max_hp = 20;
+base_hp = 15;
+max_hp = 15;
 move_speed = 1 + (obj_player.player_level * 0.1);
 damage = 5 + (obj_player.player_level * 2);
 attack_cooldown = 60;

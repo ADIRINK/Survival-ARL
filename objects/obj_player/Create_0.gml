@@ -34,17 +34,16 @@ items_collected = ds_list_create();;
 /// @DnDHash : 551C0522
 /// @DnDComment : Weapon system
 /// @DnDInput : 4
-/// @DnDArgument : "expr" "1"
 /// @DnDArgument : "expr_2" "1"
-/// @DnDArgument : "expr_3" "0.1"
+/// @DnDArgument : "expr_3" "0.03"
 /// @DnDArgument : "var" "weapon_type"
 /// @DnDArgument : "var_1" "attack_timer"
 /// @DnDArgument : "var_2" "projectile_count"
 /// @DnDArgument : "var_3" "crit_chance"
-weapon_type = 1;
+weapon_type = 0;
 attack_timer = 0;
 projectile_count = 1;
-crit_chance = 0.1;
+crit_chance = 0.03;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -68,19 +67,22 @@ arrow_cooldown = 60;
 /// @DnDVersion : 1
 /// @DnDHash : 20B22F01
 /// @DnDComment : Wand stats
-/// @DnDInput : 4
+/// @DnDInput : 5
 /// @DnDArgument : "expr" "10"
 /// @DnDArgument : "expr_1" "200"
 /// @DnDArgument : "expr_2" "60"
 /// @DnDArgument : "expr_3" "90"
+/// @DnDArgument : "expr_4" "1"
 /// @DnDArgument : "var" "wand_damage"
 /// @DnDArgument : "var_1" "wand_range"
 /// @DnDArgument : "var_2" "wand_aeo_radius"
 /// @DnDArgument : "var_3" "wand_cooldown"
+/// @DnDArgument : "var_4" "wand_penetration"
 wand_damage = 10;
 wand_range = 200;
 wand_aeo_radius = 60;
 wand_cooldown = 90;
+wand_penetration = 1;
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1

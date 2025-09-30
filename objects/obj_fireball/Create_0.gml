@@ -1,19 +1,28 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 5CCB1FD5
-/// @DnDInput : 4
+/// @DnDInput : 7
 /// @DnDArgument : "expr" "obj_player.wand_damage"
 /// @DnDArgument : "expr_1" "obj_player.wand_aeo_radius"
 /// @DnDArgument : "expr_2" "6"
 /// @DnDArgument : "expr_3" "obj_player.wand_range"
+/// @DnDArgument : "expr_4" "obj_player.wand_penetration"
+/// @DnDArgument : "expr_5" "penetration"
+/// @DnDArgument : "expr_6" "ds_list_create()"
 /// @DnDArgument : "var" "damage"
-/// @DnDArgument : "var_1" "aeo_radius"
+/// @DnDArgument : "var_1" "aoe_radius"
 /// @DnDArgument : "var_2" "fireball_speed"
 /// @DnDArgument : "var_3" "range_left"
+/// @DnDArgument : "var_4" "penetration"
+/// @DnDArgument : "var_5" "hits_left"
+/// @DnDArgument : "var_6" "hit_enemies"
 damage = obj_player.wand_damage;
-aeo_radius = obj_player.wand_aeo_radius;
+aoe_radius = obj_player.wand_aeo_radius;
 fireball_speed = 6;
 range_left = obj_player.wand_range;
+penetration = obj_player.wand_penetration;
+hits_left = penetration;
+hit_enemies = ds_list_create();
 
 /// @DnDAction : YoYo Games.Instances.If_Instance_Exists
 /// @DnDVersion : 1

@@ -46,6 +46,7 @@
     {"id":{"name":"obj_enemy_stalker","path":"objects/obj_enemy_stalker/obj_enemy_stalker.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_fireball","path":"objects/obj_fireball/obj_fireball.yy",},},
+    {"id":{"name":"obj_floating_text","path":"objects/obj_floating_text/obj_floating_text.yy",},},
     {"id":{"name":"obj_gold","path":"objects/obj_gold/obj_gold.yy",},},
     {"id":{"name":"obj_item","path":"objects/obj_item/obj_item.yy",},},
     {"id":{"name":"obj_level_menu","path":"objects/obj_level_menu/obj_level_menu.yy",},},
