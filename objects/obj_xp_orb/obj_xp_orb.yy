@@ -9,8 +9,8 @@
   "name":"obj_xp_orb",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Dropables",
+    "path":"folders/Objects/Dropables.yy",
   },
   "parentObjectId":null,
   "persistent":false,

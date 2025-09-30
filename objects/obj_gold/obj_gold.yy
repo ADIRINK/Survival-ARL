@@ -9,8 +9,8 @@
   "name":"obj_gold",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Dropables",
+    "path":"folders/Objects/Dropables.yy",
   },
   "parentObjectId":null,
   "persistent":false,
