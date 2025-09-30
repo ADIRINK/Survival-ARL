@@ -15,5 +15,5 @@ var l3B0E571A_0 = false;l3B0E571A_0 = instance_exists(obj_player);if(l3B0E571A
 	/// @DnDVersion : 1
 	/// @DnDHash : 0F6464E6
 	/// @DnDParent : 3B0E571A
-	/// @DnDArgument : "speed" "3"
-	speed = 3;}
+	/// @DnDArgument : "speed" "obj_player.move_speed * 1.3"
+	speed = obj_player.move_speed * 1.3;}

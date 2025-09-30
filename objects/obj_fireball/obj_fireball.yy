@@ -11,8 +11,8 @@
   "name":"obj_fireball",
   "overriddenProperties":[],
   "parent":{
-    "name":"Weapons",
-    "path":"folders/Objects/Weapons.yy",
+    "name":"Projectiles",
+    "path":"folders/Objects/Projectiles.yy",
   },
   "parentObjectId":null,
   "persistent":false,

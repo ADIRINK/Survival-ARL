@@ -178,6 +178,14 @@ if(hp <= 0){	/// @DnDAction : YoYo Games.Instances.Create_Instance
 		/// @DnDSaveInfo : "objectid" "obj_gold"
 		instance_create_layer(x + 0, y + 0, "Instances", obj_gold);
 	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 15F52A03
+		/// @DnDParent : 0B5D272F
+		/// @DnDArgument : "expr" "obj_room_controller.kill_count + 1"
+		/// @DnDArgument : "var" "obj_room_controller.kill_count"
+		obj_room_controller.kill_count = obj_room_controller.kill_count + 1;
+	
 		/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 		/// @DnDVersion : 1
 		/// @DnDHash : 646B43C0

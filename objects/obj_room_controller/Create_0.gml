@@ -12,6 +12,27 @@ game_paused = false;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
+/// @DnDHash : 25F18094
+/// @DnDInput : 6
+/// @DnDArgument : "expr" "1"
+/// @DnDArgument : "expr_1" "7200"
+/// @DnDArgument : "expr_2" "false"
+/// @DnDArgument : "expr_3" "false"
+/// @DnDArgument : "var" "floor_level"
+/// @DnDArgument : "var_1" "boss_timer"
+/// @DnDArgument : "var_2" "boss_spawned"
+/// @DnDArgument : "var_3" "boss_killed"
+/// @DnDArgument : "var_4" "kill_count"
+/// @DnDArgument : "var_5" "boss_survival_timer"
+floor_level = 1;
+boss_timer = 7200;
+boss_spawned = false;
+boss_killed = false;
+kill_count = 0;
+boss_survival_timer = 0;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
 /// @DnDHash : 77050EE9
 /// @DnDInput : 2
 /// @DnDArgument : "expr" "irandom_range(3, 5)"

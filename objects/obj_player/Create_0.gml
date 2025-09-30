@@ -34,13 +34,14 @@ items_collected = ds_list_create();;
 /// @DnDHash : 551C0522
 /// @DnDComment : Weapon system
 /// @DnDInput : 4
+/// @DnDArgument : "expr" "1"
 /// @DnDArgument : "expr_2" "1"
 /// @DnDArgument : "expr_3" "0.03"
 /// @DnDArgument : "var" "weapon_type"
 /// @DnDArgument : "var_1" "attack_timer"
 /// @DnDArgument : "var_2" "projectile_count"
 /// @DnDArgument : "var_3" "crit_chance"
-weapon_type = 0;
+weapon_type = 1;
 attack_timer = 0;
 projectile_count = 1;
 crit_chance = 0.03;
@@ -91,17 +92,20 @@ wand_penetration = 1;
 if(weapon_type == 0){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 29EE94BE
-	/// @DnDInput : 3
+	/// @DnDInput : 4
 	/// @DnDParent : 4A9CB4D9
 	/// @DnDArgument : "expr" "arrow_cooldown"
 	/// @DnDArgument : "expr_1" "arrow_damage"
 	/// @DnDArgument : "expr_2" "arrow_range"
+	/// @DnDArgument : "expr_3" "arrow_penetration"
 	/// @DnDArgument : "var" "attack_cooldown"
 	/// @DnDArgument : "var_1" "current_damage"
 	/// @DnDArgument : "var_2" "current_range"
+	/// @DnDArgument : "var_3" "current_penetration"
 	attack_cooldown = arrow_cooldown;
 	current_damage = arrow_damage;
-	current_range = arrow_range;}
+	current_range = arrow_range;
+	current_penetration = arrow_penetration;}
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
@@ -111,14 +115,17 @@ if(weapon_type == 0){	/// @DnDAction : YoYo Games.Common.Variable
 if(weapon_type == 1){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 671A0289
-	/// @DnDInput : 3
+	/// @DnDInput : 4
 	/// @DnDParent : 36657888
 	/// @DnDArgument : "expr" "wand_cooldown"
 	/// @DnDArgument : "expr_1" "wand_damage"
 	/// @DnDArgument : "expr_2" "wand_range"
+	/// @DnDArgument : "expr_3" "wand_penetration"
 	/// @DnDArgument : "var" "attack_cooldown"
 	/// @DnDArgument : "var_1" "current_damage"
 	/// @DnDArgument : "var_2" "current_range"
+	/// @DnDArgument : "var_3" "current_penetration"
 	attack_cooldown = wand_cooldown;
 	current_damage = wand_damage;
-	current_range = wand_range;}
+	current_range = wand_range;
+	current_penetration = wand_penetration;}

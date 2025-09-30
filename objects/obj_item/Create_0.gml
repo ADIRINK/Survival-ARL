@@ -1,7 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 664D6252
-/// @DnDInput : 6
+/// @DnDInput : 7
 /// @DnDArgument : "expr" "irandom(5)"
 /// @DnDArgument : "expr_1" """"
 /// @DnDArgument : "var" "item_id"
@@ -10,12 +10,14 @@
 /// @DnDArgument : "var_3" "speed_bonus"
 /// @DnDArgument : "var_4" "hp_bonus"
 /// @DnDArgument : "var_5" "range_bonus"
+/// @DnDArgument : "var_6" "crit_bonus"
 item_id = irandom(5);
 item_name = "";
 damage_bonus = 0;
 speed_bonus = 0;
 hp_bonus = 0;
 range_bonus = 0;
+crit_bonus = 0;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -156,10 +158,14 @@ var l4B92BD5F_0 = item_id;switch(l4B92BD5F_0){	/// @DnDAction : YoYo Games.Sw
 	case 5:	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 2DF5AD67
+		/// @DnDInput : 2
 		/// @DnDParent : 71CACC60
 		/// @DnDArgument : "expr" ""Lucky Charm""
+		/// @DnDArgument : "expr_1" "0.1"
 		/// @DnDArgument : "var" "item_name"
+		/// @DnDArgument : "var_1" "crit_bonus"
 		item_name = "Lucky Charm";
+		crit_bonus = 0.1;
 	
 		/// @DnDAction : YoYo Games.Loops.Break
 		/// @DnDVersion : 1
