@@ -20,6 +20,7 @@
     {"name":"obj_arrow","order":2,"path":"objects/obj_arrow/obj_arrow.yy",},
     {"name":"obj_chest","order":6,"path":"objects/obj_chest/obj_chest.yy",},
     {"name":"obj_enemy","order":1,"path":"objects/obj_enemy/obj_enemy.yy",},
+    {"name":"obj_fireball","order":11,"path":"objects/obj_fireball/obj_fireball.yy",},
     {"name":"obj_gold","order":5,"path":"objects/obj_gold/obj_gold.yy",},
     {"name":"obj_item","order":9,"path":"objects/obj_item/obj_item.yy",},
     {"name":"obj_level_menu","order":7,"path":"objects/obj_level_menu/obj_level_menu.yy",},

@@ -1,10 +1,18 @@
+/// @DnDAction : YoYo Games.Common.If_Expression
+/// @DnDVersion : 1
+/// @DnDHash : 3C16D61C
+/// @DnDArgument : "expr" "!variable_instance_exists(id, "cost")"
+if(!variable_instance_exists(id, "cost")){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 013024E5
+	/// @DnDParent : 3C16D61C
+	/// @DnDArgument : "expr" "25"
+	/// @DnDArgument : "var" "cost"
+	cost = 25;}
+
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 2FDB6567
-/// @DnDInput : 2
-/// @DnDArgument : "expr" "25 * power(2.2, obj_player.player_level)"
-/// @DnDArgument : "expr_1" "false"
-/// @DnDArgument : "var" "cost"
-/// @DnDArgument : "var_1" "opened"
-cost = 25 * power(2.2, obj_player.player_level);
+/// @DnDHash : 2983B847
+/// @DnDArgument : "expr" "false"
+/// @DnDArgument : "var" "opened"
 opened = false;
