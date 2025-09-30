@@ -4,6 +4,14 @@
 /// @DnDDisabled : 1
 /// @DnDArgument : "var" "obj_room_controller.game_paused"
 /// @DnDArgument : "value" "false"
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 2B9C9F90
+/// @DnDParent : 136669FF
+/// @DnDArgument : "expr" "-y"
+/// @DnDArgument : "var" "depth"
+depth = -y;
+
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 22302258

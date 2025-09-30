@@ -1,3 +1,10 @@
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 249492CC
+/// @DnDArgument : "expr" "-y"
+/// @DnDArgument : "var" "depth"
+depth = -y;
+
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 45F88174

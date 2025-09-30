@@ -11,6 +11,14 @@ if(obj_room_controller.game_paused == false){	/// @DnDAction : YoYo Games.Comm
 	/// @DnDArgument : "var" "moving"
 	moving = false;
 
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 4F065956
+	/// @DnDParent : 11B1AC09
+	/// @DnDArgument : "expr" "-y"
+	/// @DnDArgument : "var" "depth"
+	depth = -y;
+
 	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
 	/// @DnDVersion : 1
 	/// @DnDHash : 3886C29A
