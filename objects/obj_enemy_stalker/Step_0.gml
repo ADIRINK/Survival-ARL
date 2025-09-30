@@ -43,8 +43,9 @@ var l6CB1719B_0 = false;l6CB1719B_0 = instance_exists(obj_player);if(l6CB1719B
 		/// @DnDHash : 00F5AC5F
 		/// @DnDParent : 7FD828BB
 		/// @DnDArgument : "var" "dist_to_player"
+		/// @DnDArgument : "op" "1"
 		/// @DnDArgument : "value" "engage_distance"
-		if(dist_to_player == engage_distance){	/// @DnDAction : YoYo Games.Common.Variable
+		if(dist_to_player < engage_distance){	/// @DnDAction : YoYo Games.Common.Variable
 			/// @DnDVersion : 1
 			/// @DnDHash : 1DDDCC19
 			/// @DnDParent : 00F5AC5F

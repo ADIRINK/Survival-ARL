@@ -31,48 +31,92 @@ items_collected = ds_list_create();;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 4746CB52
-/// @DnDComment : Weapon vars
-/// @DnDInput : 8
-/// @DnDArgument : "expr" "60"
+/// @DnDHash : 551C0522
+/// @DnDComment : Weapon system
+/// @DnDInput : 4
+/// @DnDArgument : "expr" "1"
 /// @DnDArgument : "expr_2" "1"
-/// @DnDArgument : "expr_3" "200"
-/// @DnDArgument : "expr_4" "10"
-/// @DnDArgument : "expr_5" "1"
-/// @DnDArgument : "expr_6" "0.1"
-/// @DnDArgument : "var" "attack_cooldown"
+/// @DnDArgument : "expr_3" "0.1"
+/// @DnDArgument : "var" "weapon_type"
 /// @DnDArgument : "var_1" "attack_timer"
 /// @DnDArgument : "var_2" "projectile_count"
-/// @DnDArgument : "var_3" "arrow_range"
-/// @DnDArgument : "var_4" "arrow_damage"
-/// @DnDArgument : "var_5" "arrow_penetration"
-/// @DnDArgument : "var_6" "crit_chance"
-/// @DnDArgument : "var_7" "crit_multiplier"
-attack_cooldown = 60;
+/// @DnDArgument : "var_3" "crit_chance"
+weapon_type = 1;
 attack_timer = 0;
 projectile_count = 1;
-arrow_range = 200;
-arrow_damage = 10;
-arrow_penetration = 1;
 crit_chance = 0.1;
-crit_multiplier = 0;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 11C72EA8
-/// @DnDInput : 5
-/// @DnDArgument : "expr" "1"
-/// @DnDArgument : "expr_1" "15"
-/// @DnDArgument : "expr_2" "80"
+/// @DnDHash : 205553B6
+/// @DnDComment : Arrow stats
+/// @DnDInput : 4
+/// @DnDArgument : "expr" "10"
+/// @DnDArgument : "expr_1" "200"
+/// @DnDArgument : "expr_2" "1"
+/// @DnDArgument : "expr_3" "60"
+/// @DnDArgument : "var" "arrow_damage"
+/// @DnDArgument : "var_1" "arrow_range"
+/// @DnDArgument : "var_2" "arrow_penetration"
+/// @DnDArgument : "var_3" "arrow_cooldown"
+arrow_damage = 10;
+arrow_range = 200;
+arrow_penetration = 1;
+arrow_cooldown = 60;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 20B22F01
+/// @DnDComment : Wand stats
+/// @DnDInput : 4
+/// @DnDArgument : "expr" "10"
+/// @DnDArgument : "expr_1" "200"
+/// @DnDArgument : "expr_2" "60"
 /// @DnDArgument : "expr_3" "90"
-/// @DnDArgument : "expr_4" "200"
-/// @DnDArgument : "var" "weapon_type"
-/// @DnDArgument : "var_1" "wand_damage"
+/// @DnDArgument : "var" "wand_damage"
+/// @DnDArgument : "var_1" "wand_range"
 /// @DnDArgument : "var_2" "wand_aeo_radius"
 /// @DnDArgument : "var_3" "wand_cooldown"
-/// @DnDArgument : "var_4" "wand_range"
-weapon_type = 1;
-wand_damage = 15;
-wand_aeo_radius = 80;
-wand_cooldown = 90;
+wand_damage = 10;
 wand_range = 200;
+wand_aeo_radius = 60;
+wand_cooldown = 90;
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 4A9CB4D9
+/// @DnDArgument : "var" "weapon_type"
+if(weapon_type == 0){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 29EE94BE
+	/// @DnDInput : 3
+	/// @DnDParent : 4A9CB4D9
+	/// @DnDArgument : "expr" "arrow_cooldown"
+	/// @DnDArgument : "expr_1" "arrow_damage"
+	/// @DnDArgument : "expr_2" "arrow_range"
+	/// @DnDArgument : "var" "attack_cooldown"
+	/// @DnDArgument : "var_1" "current_damage"
+	/// @DnDArgument : "var_2" "current_range"
+	attack_cooldown = arrow_cooldown;
+	current_damage = arrow_damage;
+	current_range = arrow_range;}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 36657888
+/// @DnDArgument : "var" "weapon_type"
+/// @DnDArgument : "value" "1"
+if(weapon_type == 1){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 671A0289
+	/// @DnDInput : 3
+	/// @DnDParent : 36657888
+	/// @DnDArgument : "expr" "wand_cooldown"
+	/// @DnDArgument : "expr_1" "wand_damage"
+	/// @DnDArgument : "expr_2" "wand_range"
+	/// @DnDArgument : "var" "attack_cooldown"
+	/// @DnDArgument : "var_1" "current_damage"
+	/// @DnDArgument : "var_2" "current_range"
+	attack_cooldown = wand_cooldown;
+	current_damage = wand_damage;
+	current_range = wand_range;}

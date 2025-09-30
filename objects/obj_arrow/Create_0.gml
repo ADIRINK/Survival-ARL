@@ -24,16 +24,16 @@ hit_enemies = ds_list_create();
 /// @DnDAction : YoYo Games.Instances.If_Instance_Exists
 /// @DnDVersion : 1
 /// @DnDHash : 018BE96A
-/// @DnDArgument : "obj" "obj_enemy"
-/// @DnDSaveInfo : "obj" "obj_enemy"
-var l018BE96A_0 = false;l018BE96A_0 = instance_exists(obj_enemy);if(l018BE96A_0){	/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDArgument : "obj" "obj_enemy_parent"
+/// @DnDSaveInfo : "obj" "obj_enemy_parent"
+var l018BE96A_0 = false;l018BE96A_0 = instance_exists(obj_enemy_parent);if(l018BE96A_0){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 795A5BDE
 	/// @DnDInput : 2
 	/// @DnDParent : 018BE96A
-	/// @DnDArgument : "expr" "instance_nearest(obj_player.x, obj_player.y, obj_enemy)"
+	/// @DnDArgument : "expr" "instance_nearest(obj_player.x, obj_player.y, obj_enemy_parent)"
 	/// @DnDArgument : "expr_1" "point_direction(x, y, target.x, target.y)"
 	/// @DnDArgument : "var" "target"
 	/// @DnDArgument : "var_1" "direction"
-	target = instance_nearest(obj_player.x, obj_player.y, obj_enemy);
+	target = instance_nearest(obj_player.x, obj_player.y, obj_enemy_parent);
 	direction = point_direction(x, y, target.x, target.y);}

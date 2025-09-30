@@ -133,15 +133,15 @@ if(obj_room_controller.game_paused == false){	/// @DnDAction : YoYo Games.Comm
 		/// @DnDVersion : 1
 		/// @DnDHash : 6FD510C5
 		/// @DnDParent : 31AE8FA4
-		/// @DnDArgument : "obj" "obj_enemy"
-		/// @DnDSaveInfo : "obj" "obj_enemy"
-		var l6FD510C5_0 = false;l6FD510C5_0 = instance_exists(obj_enemy);if(l6FD510C5_0){	/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDArgument : "obj" "obj_enemy_parent"
+		/// @DnDSaveInfo : "obj" "obj_enemy_parent"
+		var l6FD510C5_0 = false;l6FD510C5_0 = instance_exists(obj_enemy_parent);if(l6FD510C5_0){	/// @DnDAction : YoYo Games.Common.Variable
 			/// @DnDVersion : 1
 			/// @DnDHash : 10C15B96
 			/// @DnDParent : 6FD510C5
-			/// @DnDArgument : "expr" "instance_nearest(x, y, obj_enemy)"
+			/// @DnDArgument : "expr" "instance_nearest(x, y, obj_enemy_parent)"
 			/// @DnDArgument : "var" "nearest_enemy"
-			nearest_enemy = instance_nearest(x, y, obj_enemy);
+			nearest_enemy = instance_nearest(x, y, obj_enemy_parent);
 		
 			/// @DnDAction : YoYo Games.Loops.Repeat
 			/// @DnDVersion : 1

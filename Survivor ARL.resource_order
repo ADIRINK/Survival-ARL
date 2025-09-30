@@ -22,6 +22,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_enemy_parent","order":2,"path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},
     {"name":"obj_enemy_stalker","order":1,"path":"objects/obj_enemy_stalker/obj_enemy_stalker.yy",},
     {"name":"obj_fireball","order":1,"path":"objects/obj_fireball/obj_fireball.yy",},
     {"name":"obj_item","order":1,"path":"objects/obj_item/obj_item.yy",},
