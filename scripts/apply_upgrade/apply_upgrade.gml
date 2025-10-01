@@ -185,5 +185,22 @@ function apply_upgrade(upgrade_type) {	/// @DnDAction : YoYo Games.Common.Appl
 				/// @DnDParent : 1D39E147
 				/// @DnDArgument : "expr" "pickup_range + 25"
 				/// @DnDArgument : "var" "pickup_range"
-				pickup_range = pickup_range + 25;	break;}
+				pickup_range = pickup_range + 25;	break;
+		
+			/// @DnDAction : YoYo Games.Switch.Case
+			/// @DnDVersion : 1
+			/// @DnDHash : 0EF5F73F
+			/// @DnDParent : 658A4552
+			/// @DnDArgument : "const" "13"
+			case 13:	/// @DnDAction : YoYo Games.Common.Variable
+				/// @DnDVersion : 1
+				/// @DnDHash : 6C7B7A87
+				/// @DnDInput : 2
+				/// @DnDParent : 0EF5F73F
+				/// @DnDArgument : "expr" "bounce_count + 1"
+				/// @DnDArgument : "expr_1" "current_penetration + 1"
+				/// @DnDArgument : "var" "bounce_count"
+				/// @DnDArgument : "var_1" "current_penetration"
+				bounce_count = bounce_count + 1;
+				current_penetration = current_penetration + 1;	break;}
 	}}

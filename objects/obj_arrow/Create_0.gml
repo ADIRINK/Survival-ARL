@@ -1,7 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 4E07ACCC
-/// @DnDInput : 8
+/// @DnDInput : 10
 /// @DnDArgument : "expr" "obj_player.current_damage"
 /// @DnDArgument : "expr_1" "obj_player.current_penetration"
 /// @DnDArgument : "expr_2" "obj_player.current_range"
@@ -10,6 +10,8 @@
 /// @DnDArgument : "expr_5" "ds_list_create()"
 /// @DnDArgument : "expr_6" "obj_player.projectile_scale"
 /// @DnDArgument : "expr_7" "obj_player.projectile_scale"
+/// @DnDArgument : "expr_8" "obj_player.bounce_count"
+/// @DnDArgument : "expr_9" "true"
 /// @DnDArgument : "var" "damage"
 /// @DnDArgument : "var_1" "penetration"
 /// @DnDArgument : "var_2" "range_left"
@@ -18,6 +20,8 @@
 /// @DnDArgument : "var_5" "hit_enemies"
 /// @DnDArgument : "var_6" "image_xscale"
 /// @DnDArgument : "var_7" "image_yscale"
+/// @DnDArgument : "var_8" "bounces_left"
+/// @DnDArgument : "var_9" "can_bounce"
 damage = obj_player.current_damage;
 penetration = obj_player.current_penetration;
 range_left = obj_player.current_range;
@@ -26,6 +30,8 @@ hits_left = penetration;
 hit_enemies = ds_list_create();
 image_xscale = obj_player.projectile_scale;
 image_yscale = obj_player.projectile_scale;
+bounces_left = obj_player.bounce_count;
+can_bounce = true;
 
 /// @DnDAction : YoYo Games.Instances.If_Instance_Exists
 /// @DnDVersion : 1

@@ -19,6 +19,21 @@ if(obj_room_controller.game_paused == false){	/// @DnDAction : YoYo Games.Comm
 	/// @DnDArgument : "var" "depth"
 	depth = -y;
 
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 6FBC9BE5
+	/// @DnDParent : 11B1AC09
+	/// @DnDArgument : "expr" "calculate_player_power()"
+	/// @DnDArgument : "var" "player_power"
+	player_power = calculate_player_power();
+
+	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+	/// @DnDVersion : 1
+	/// @DnDHash : 2B206F54
+	/// @DnDParent : 11B1AC09
+	/// @DnDArgument : "msg" "calculate_player_power()"
+	show_debug_message(string(calculate_player_power()));
+
 	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
 	/// @DnDVersion : 1
 	/// @DnDHash : 3886C29A

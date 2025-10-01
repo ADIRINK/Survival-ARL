@@ -64,6 +64,7 @@
     {"id":{"name":"obj_xp_orb","path":"objects/obj_xp_orb/obj_xp_orb.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"apply_upgrade","path":"scripts/apply_upgrade/apply_upgrade.yy",},},
+    {"id":{"name":"calculate_player_power","path":"scripts/calculate_player_power/calculate_player_power.yy",},},
     {"id":{"name":"draw_character_shadow","path":"scripts/draw_character_shadow/draw_character_shadow.yy",},},
     {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},},
     {"id":{"name":"spr_boss","path":"sprites/spr_boss/spr_boss.yy",},},

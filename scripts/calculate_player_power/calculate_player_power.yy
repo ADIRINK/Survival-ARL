@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"calculate_player_power",
+  "isCompatibility":false,
+  "isDnD":true,
+  "name":"calculate_player_power",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
