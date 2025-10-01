@@ -17,7 +17,7 @@ function draw_character_shadow(spr, img, xx, yy, xscale, yscale, sun_angle, sun_
 	/// @DnDHash : 23AD7463
 	/// @DnDInput : 4
 	/// @DnDParent : 7DC03C42
-	/// @DnDArgument : "expr" "12 * sun_intensity"
+	/// @DnDArgument : "expr" "4 * sun_intensity"
 	/// @DnDArgument : "expr_1" "lengthdir_x(shadow_length, sun_angle)"
 	/// @DnDArgument : "expr_2" "lengthdir_y(shadow_length, sun_angle)"
 	/// @DnDArgument : "expr_3" "0.4 * sun_intensity"
@@ -25,7 +25,7 @@ function draw_character_shadow(spr, img, xx, yy, xscale, yscale, sun_angle, sun_
 	/// @DnDArgument : "var_1" "shadow_x_offset"
 	/// @DnDArgument : "var_2" "shadow_y_offset"
 	/// @DnDArgument : "var_3" "shadow_alpha"
-	shadow_length = 12 * sun_intensity;
+	shadow_length = 4 * sun_intensity;
 	shadow_x_offset = lengthdir_x(shadow_length, sun_angle);
 	shadow_y_offset = lengthdir_y(shadow_length, sun_angle);
 	shadow_alpha = 0.4 * sun_intensity;

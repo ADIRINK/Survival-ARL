@@ -48,13 +48,28 @@ draw_set_colour($FFFFFFFF & $ffffff);
 var l09BB8E3B_0=($FFFFFFFF >> 24);
 draw_set_alpha(l09BB8E3B_0 / $ff);
 
+/// @DnDAction : YoYo Games.Drawing.Set_Font
+/// @DnDVersion : 1
+/// @DnDHash : 6F85AE59
+/// @DnDArgument : "font" "fnt_timer"
+/// @DnDSaveInfo : "font" "fnt_timer"
+draw_set_font(fnt_timer);
+
+/// @DnDAction : YoYo Games.Drawing.Set_Alignment
+/// @DnDVersion : 1.1
+/// @DnDHash : 0DF3677C
+/// @DnDArgument : "halign" "fa_center"
+/// @DnDArgument : "valign" "fa_middle"
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
 /// @DnDHash : 3C192938
-/// @DnDArgument : "x" "room_width/2"
-/// @DnDArgument : "y" "y-180"
+/// @DnDArgument : "x" "camx/2"
+/// @DnDArgument : "y" "300"
 /// @DnDArgument : "caption" ""LEVEL UP!""
-draw_text(room_width/2, y-180, string("LEVEL UP!") + "");
+draw_text(camx/2, 300, string("LEVEL UP!") + "");
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1

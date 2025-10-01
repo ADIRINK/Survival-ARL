@@ -3,6 +3,13 @@
 /// @DnDHash : 1527BE09
 randomize();
 
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 0F383553
+/// @DnDArgument : "value" "-1"
+/// @DnDArgument : "var" "shadow_surface"
+global.shadow_surface = -1;
+
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 3C1BC1B0

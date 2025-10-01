@@ -143,3 +143,27 @@ if(weapon_type == 1){	/// @DnDAction : YoYo Games.Common.Variable
 	current_damage = wand_damage;
 	current_range = wand_range;
 	current_penetration = wand_penetration;}
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 10340B0D
+/// @DnDArgument : "code" "// Create particle system for dust$(13_10)dust_system = part_system_create();$(13_10)part_system_depth(dust_system, -1000);$(13_10)$(13_10)// Create dust particle type$(13_10)dust_particle = part_type_create();$(13_10)$(13_10)// Particle appearance$(13_10)part_type_sprite(dust_particle, spr_dust_particle, false, false, false);$(13_10)part_type_size(dust_particle, 0.3, 0.8, -0.01, 0);$(13_10)part_type_alpha3(dust_particle, 0.8, 0.5, 0);$(13_10)part_type_color1(dust_particle, make_color_rgb(255, 80, 26));$(13_10)$(13_10)// Particle movement$(13_10)part_type_direction(dust_particle, 0, 360, 0, 0);$(13_10)part_type_speed(dust_particle, 0.5, 1.5, -0.05, 0);$(13_10)$(13_10)// Particle lifetime$(13_10)part_type_life(dust_particle, 20, 60);"
+// Create particle system for dust
+dust_system = part_system_create();
+part_system_depth(dust_system, -1000);
+
+// Create dust particle type
+dust_particle = part_type_create();
+
+// Particle appearance
+part_type_sprite(dust_particle, spr_dust_particle, false, false, false);
+part_type_size(dust_particle, 0.3, 0.8, -0.01, 0);
+part_type_alpha3(dust_particle, 0.8, 0.5, 0);
+part_type_color1(dust_particle, make_color_rgb(255, 80, 26));
+
+// Particle movement
+part_type_direction(dust_particle, 0, 360, 0, 0);
+part_type_speed(dust_particle, 0.5, 1.5, -0.05, 0);
+
+// Particle lifetime
+part_type_life(dust_particle, 20, 60);

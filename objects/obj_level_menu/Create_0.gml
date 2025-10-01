@@ -39,6 +39,17 @@ upgrade_3 = irandom(8);
 obj_room_controller.game_paused = true;
 cam = view_camera[0];
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 2BC4B78F
+/// @DnDInput : 2
+/// @DnDArgument : "expr" "camera_get_view_x(cam) + camera_get_view_width(cam)"
+/// @DnDArgument : "expr_1" "camera_get_view_y(cam) + camera_get_view_height(cam)"
+/// @DnDArgument : "var" "camx"
+/// @DnDArgument : "var_1" "camy"
+camx = camera_get_view_x(cam) + camera_get_view_width(cam);
+camy = camera_get_view_y(cam) + camera_get_view_height(cam);
+
 /// @DnDAction : YoYo Games.Loops.While_Loop
 /// @DnDVersion : 1
 /// @DnDHash : 03616BB9
