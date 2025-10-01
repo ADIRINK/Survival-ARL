@@ -186,8 +186,8 @@ if(hp <= 0){	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
 	/// @DnDHash : 1D3F9D58
 	/// @DnDParent : 19ED9D68
-	/// @DnDArgument : "times" "5"
-	repeat(5){	/// @DnDAction : YoYo Games.Instances.Create_Instance
+	/// @DnDArgument : "times" "random_range(1,3)"
+	repeat(random_range(1,3)){	/// @DnDAction : YoYo Games.Instances.Create_Instance
 		/// @DnDVersion : 1
 		/// @DnDHash : 056906A4
 		/// @DnDParent : 1D3F9D58

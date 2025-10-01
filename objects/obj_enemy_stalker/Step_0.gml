@@ -198,19 +198,19 @@ var l1486AE77_0 = instance_place(x + 0, y + 0, [obj_player]);if ((l1486AE77_0 >
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
-/// @DnDHash : 2F67DC93
+/// @DnDHash : 40CFB14C
 /// @DnDParent : 136669FF
 /// @DnDArgument : "var" "hp"
 /// @DnDArgument : "op" "3"
 if(hp <= 0){	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
-	/// @DnDHash : 2B8EE95F
-	/// @DnDParent : 2F67DC93
+	/// @DnDHash : 169748DD
+	/// @DnDParent : 40CFB14C
 	/// @DnDArgument : "expr" "random(1) < 0.3"
 	if(random(1) < 0.3){	/// @DnDAction : YoYo Games.Instances.Create_Instance
 		/// @DnDVersion : 1
-		/// @DnDHash : 54EF6D23
-		/// @DnDParent : 2B8EE95F
+		/// @DnDHash : 0E10A674
+		/// @DnDParent : 169748DD
 		/// @DnDArgument : "xpos_relative" "1"
 		/// @DnDArgument : "ypos_relative" "1"
 		/// @DnDArgument : "objectid" "obj_gold"
@@ -219,13 +219,13 @@ if(hp <= 0){	/// @DnDAction : YoYo Games.Common.If_Expression
 
 	/// @DnDAction : YoYo Games.Loops.Repeat
 	/// @DnDVersion : 1
-	/// @DnDHash : 67A840E6
-	/// @DnDParent : 2F67DC93
-	/// @DnDArgument : "times" "random(5)"
-	repeat(random(5)){	/// @DnDAction : YoYo Games.Instances.Create_Instance
+	/// @DnDHash : 7FCCB66C
+	/// @DnDParent : 40CFB14C
+	/// @DnDArgument : "times" "random_range(1,3)"
+	repeat(random_range(1,3)){	/// @DnDAction : YoYo Games.Instances.Create_Instance
 		/// @DnDVersion : 1
-		/// @DnDHash : 5EE4E9F7
-		/// @DnDParent : 67A840E6
+		/// @DnDHash : 469D314D
+		/// @DnDParent : 7FCCB66C
 		/// @DnDArgument : "xpos_relative" "1"
 		/// @DnDArgument : "ypos_relative" "1"
 		/// @DnDArgument : "objectid" "obj_xp_orb"
@@ -234,14 +234,14 @@ if(hp <= 0){	/// @DnDAction : YoYo Games.Common.If_Expression
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
-	/// @DnDHash : 4356904D
-	/// @DnDParent : 2F67DC93
+	/// @DnDHash : 09472D64
+	/// @DnDParent : 40CFB14C
 	/// @DnDArgument : "expr" "obj_room_controller.kill_count + 1"
 	/// @DnDArgument : "var" "obj_room_controller.kill_count"
 	obj_room_controller.kill_count = obj_room_controller.kill_count + 1;
 
 	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 	/// @DnDVersion : 1
-	/// @DnDHash : 252B5B6E
-	/// @DnDParent : 2F67DC93
+	/// @DnDHash : 12BBCEA9
+	/// @DnDParent : 40CFB14C
 	instance_destroy();}
