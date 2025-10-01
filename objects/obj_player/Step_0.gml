@@ -151,20 +151,28 @@ if(obj_room_controller.game_paused == false){	/// @DnDAction : YoYo Games.Comm
 			/// @DnDArgument : "var" "dust_timer"
 			dust_timer = 0;
 		
+			/// @DnDAction : YoYo Games.Instances.Create_Instance
+			/// @DnDVersion : 1
+			/// @DnDHash : 7FA8F02A
+			/// @DnDParent : 4EAE4175
+			/// @DnDArgument : "xpos" "x + random_range(-8, 8)"
+			/// @DnDArgument : "ypos" "y + 12"
+			/// @DnDArgument : "var" "dust"
+			/// @DnDArgument : "objectid" "obj_dust_particle"
+			/// @DnDSaveInfo : "objectid" "obj_dust_particle"
+			dust = instance_create_layer(x + random_range(-8, 8), y + 12, "Instances", obj_dust_particle);
+		
 			/// @DnDAction : YoYo Games.Common.Variable
 			/// @DnDVersion : 1
 			/// @DnDHash : 2D9453BD
-			/// @DnDInput : 3
+			/// @DnDInput : 2
 			/// @DnDParent : 4EAE4175
-			/// @DnDArgument : "expr" "instance_create_layer(x, y + 8, "Instances", obj_dust_particle)"
-			/// @DnDArgument : "expr_1" "direction + 180 + random_range(-30, 30)"
-			/// @DnDArgument : "expr_2" "random_range(0.5, 1.5)"
-			/// @DnDArgument : "var" "dust"
-			/// @DnDArgument : "var_1" "dust.direction"
-			/// @DnDArgument : "var_2" "dust.speed"
-			dust = instance_create_layer(x, y + 8, "Instances", obj_dust_particle);
-			dust.direction = direction + 180 + random_range(-30, 30);
-			dust.speed = random_range(0.5, 1.5);}}
+			/// @DnDArgument : "expr" "direction + 180 + random_range(-45, 45)"
+			/// @DnDArgument : "expr_1" "random_range(0.3, 1.0)"
+			/// @DnDArgument : "var" "dust.direction"
+			/// @DnDArgument : "var_1" "dust.speed"
+			dust.direction = direction + 180 + random_range(-45, 45);
+			dust.speed = random_range(0.3, 1.0);}}
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
