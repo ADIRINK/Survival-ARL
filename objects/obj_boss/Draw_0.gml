@@ -1,3 +1,9 @@
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 5906265E
+/// @DnDArgument : "code" "draw_character_shadow(sprite_index, image_index, x, y, image_xscale, image_yscale, 135, 1.0);"
+draw_character_shadow(sprite_index, image_index, x, y, image_xscale, image_yscale, 135, 1.0);
+
 /// @DnDAction : YoYo Games.Drawing.Draw_Self
 /// @DnDVersion : 1
 /// @DnDHash : 52710B5A

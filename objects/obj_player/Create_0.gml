@@ -1,5 +1,15 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
+/// @DnDHash : 2D1AA85E
+/// @DnDComment : Dust particle system
+/// @DnDInput : 2
+/// @DnDArgument : "var" "dust_timer"
+/// @DnDArgument : "var_1" "dust_frequency"
+dust_timer = 0;
+dust_frequency = 0;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
 /// @DnDHash : 34433D75
 /// @DnDComment : Player vars
 /// @DnDInput : 9
