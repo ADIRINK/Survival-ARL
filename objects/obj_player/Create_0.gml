@@ -3,10 +3,11 @@
 /// @DnDHash : 2D1AA85E
 /// @DnDComment : Dust particle system
 /// @DnDInput : 2
+/// @DnDArgument : "expr_1" "10"
 /// @DnDArgument : "var" "dust_timer"
 /// @DnDArgument : "var_1" "dust_frequency"
 dust_timer = 0;
-dust_frequency = 0;
+dust_frequency = 10;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
