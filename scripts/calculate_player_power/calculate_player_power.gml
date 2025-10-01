@@ -3,8 +3,8 @@
 /// @DnDHash : 6FBD8B4C
 /// @DnDComment : 
 /// @DnDArgument : "funcName" "calculate_player_power"
-/// @DnDArgument : "arg" "power=0"
-function calculate_player_power(power=0) {	/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDArgument : "arg" "p_power=0"
+function calculate_player_power(p_power=0) {	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 12FC4F92
 	/// @DnDComment : Base stats
@@ -28,24 +28,24 @@ function calculate_player_power(power=0) {	/// @DnDAction : YoYo Games.Common.
 	/// @DnDArgument : "expr_relative_7" "1"
 	/// @DnDArgument : "expr_8" "projectile_scale * 5"
 	/// @DnDArgument : "expr_relative_8" "1"
-	/// @DnDArgument : "var" "power"
-	/// @DnDArgument : "var_1" "power"
-	/// @DnDArgument : "var_2" "power"
-	/// @DnDArgument : "var_3" "power"
-	/// @DnDArgument : "var_4" "power"
-	/// @DnDArgument : "var_5" "power"
-	/// @DnDArgument : "var_6" "power"
-	/// @DnDArgument : "var_7" "power"
-	/// @DnDArgument : "var_8" "power"
-	power += current_damage * 10;
-	power += current_penetration * 8;
-	power += projectile_count * 12;
-	power += (attack_cooldown / 60) * -5;
-	power += current_range * 0.05;
-	power += crit_chance * 100;
-	power += knockback * 0.3;
-	power += bounce_count * 6;
-	power += projectile_scale * 5;
+	/// @DnDArgument : "var" "p_power"
+	/// @DnDArgument : "var_1" "p_power"
+	/// @DnDArgument : "var_2" "p_power"
+	/// @DnDArgument : "var_3" "p_power"
+	/// @DnDArgument : "var_4" "p_power"
+	/// @DnDArgument : "var_5" "p_power"
+	/// @DnDArgument : "var_6" "p_power"
+	/// @DnDArgument : "var_7" "p_power"
+	/// @DnDArgument : "var_8" "p_power"
+	p_power += current_damage * 10;
+	p_power += current_penetration * 8;
+	p_power += projectile_count * 12;
+	p_power += (attack_cooldown / 60) * -5;
+	p_power += current_range * 0.05;
+	p_power += crit_chance * 100;
+	p_power += knockback * 0.3;
+	p_power += bounce_count * 6;
+	p_power += projectile_scale * 5;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -53,14 +53,17 @@ function calculate_player_power(power=0) {	/// @DnDAction : YoYo Games.Common.
 	/// @DnDInput : 3
 	/// @DnDParent : 6FBD8B4C
 	/// @DnDArgument : "expr" "max_hp * 0.5"
+	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "expr_1" "damage_reduction * 50"
+	/// @DnDArgument : "expr_relative_1" "1"
 	/// @DnDArgument : "expr_2" "lifesteal_percent * 80"
-	/// @DnDArgument : "var" "power"
-	/// @DnDArgument : "var_1" "power"
-	/// @DnDArgument : "var_2" "power"
-	power = max_hp * 0.5;
-	power = damage_reduction * 50;
-	power = lifesteal_percent * 80;
+	/// @DnDArgument : "expr_relative_2" "1"
+	/// @DnDArgument : "var" "p_power"
+	/// @DnDArgument : "var_1" "p_power"
+	/// @DnDArgument : "var_2" "p_power"
+	p_power += max_hp * 0.5;
+	p_power += damage_reduction * 50;
+	p_power += lifesteal_percent * 80;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -68,11 +71,21 @@ function calculate_player_power(power=0) {	/// @DnDAction : YoYo Games.Common.
 	/// @DnDInput : 3
 	/// @DnDParent : 6FBD8B4C
 	/// @DnDArgument : "expr" "move_speed * 3"
+	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "expr_1" "pickup_range * 0.1"
+	/// @DnDArgument : "expr_relative_1" "1"
 	/// @DnDArgument : "expr_2" "wand_aeo_radius * 0.2"
-	/// @DnDArgument : "var" "power"
-	/// @DnDArgument : "var_1" "power"
-	/// @DnDArgument : "var_2" "power"
-	power = move_speed * 3;
-	power = pickup_range * 0.1;
-	power = wand_aeo_radius * 0.2;}
+	/// @DnDArgument : "expr_relative_2" "1"
+	/// @DnDArgument : "var" "p_power"
+	/// @DnDArgument : "var_1" "p_power"
+	/// @DnDArgument : "var_2" "p_power"
+	p_power += move_speed * 3;
+	p_power += pickup_range * 0.1;
+	p_power += wand_aeo_radius * 0.2;
+
+	/// @DnDAction : YoYo Games.Common.Return
+	/// @DnDVersion : 1
+	/// @DnDHash : 2B930F25
+	/// @DnDParent : 6FBD8B4C
+	/// @DnDArgument : "value" "p_power"
+	return p_power;}

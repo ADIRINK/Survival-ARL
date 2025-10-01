@@ -1,3 +1,20 @@
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 33E2DFD1
+/// @DnDArgument : "code" "// Push away from ALL nearby enemies$(13_10)with (obj_xp_orb) {$(13_10)    if (id != other.id) {  // Don't check self$(13_10)        var dist = point_distance(x, y, other.x, other.y);$(13_10)        if (dist < 2 && dist > 0) {  // If too close$(13_10)            var push_strength = (25 - dist) / 5;  // Stronger push when closer$(13_10)            var push_dir = point_direction(other.x, other.y, x, y);$(13_10)            x += lengthdir_x(push_strength * 3, push_dir);$(13_10)            y += lengthdir_y(push_strength * 3, push_dir);$(13_10)        }$(13_10)    }$(13_10)}"
+// Push away from ALL nearby enemies
+with (obj_xp_orb) {
+    if (id != other.id) {  // Don't check self
+        var dist = point_distance(x, y, other.x, other.y);
+        if (dist < 2 && dist > 0) {  // If too close
+            var push_strength = (25 - dist) / 5;  // Stronger push when closer
+            var push_dir = point_direction(other.x, other.y, x, y);
+            x += lengthdir_x(push_strength * 3, push_dir);
+            y += lengthdir_y(push_strength * 3, push_dir);
+        }
+    }
+}
+
 /// @DnDAction : YoYo Games.Instances.If_Instance_Exists
 /// @DnDVersion : 1
 /// @DnDHash : 3B0E571A
