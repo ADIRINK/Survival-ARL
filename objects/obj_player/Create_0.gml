@@ -13,7 +13,7 @@ dust_frequency = 10;
 /// @DnDVersion : 1
 /// @DnDHash : 34433D75
 /// @DnDComment : Player vars
-/// @DnDInput : 9
+/// @DnDInput : 12
 /// @DnDArgument : "expr" "100"
 /// @DnDArgument : "expr_1" "100"
 /// @DnDArgument : "expr_2" "3"
@@ -21,6 +21,7 @@ dust_frequency = 10;
 /// @DnDArgument : "expr_5" "1"
 /// @DnDArgument : "expr_6" "25"
 /// @DnDArgument : "expr_8" "ds_list_create();"
+/// @DnDArgument : "expr_10" "50"
 /// @DnDArgument : "var" "hp"
 /// @DnDArgument : "var_1" "max_hp"
 /// @DnDArgument : "var_2" "move_speed"
@@ -30,6 +31,9 @@ dust_frequency = 10;
 /// @DnDArgument : "var_6" "gold"
 /// @DnDArgument : "var_7" "flash_timer"
 /// @DnDArgument : "var_8" "items_collected"
+/// @DnDArgument : "var_9" "lifesteal_percent"
+/// @DnDArgument : "var_10" "pickup_range"
+/// @DnDArgument : "var_11" "damage_reduction"
 hp = 100;
 max_hp = 100;
 move_speed = 3;
@@ -39,26 +43,35 @@ player_level = 1;
 gold = 25;
 flash_timer = 0;
 items_collected = ds_list_create();;
+lifesteal_percent = 0;
+pickup_range = 50;
+damage_reduction = 0;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 551C0522
 /// @DnDComment : Weapon system
-/// @DnDInput : 5
+/// @DnDInput : 7
 /// @DnDArgument : "expr" "1"
 /// @DnDArgument : "expr_2" "1"
 /// @DnDArgument : "expr_3" "0.03"
 /// @DnDArgument : "expr_4" "20"
+/// @DnDArgument : "expr_5" "1"
+/// @DnDArgument : "expr_6" "1"
 /// @DnDArgument : "var" "weapon_type"
 /// @DnDArgument : "var_1" "attack_timer"
 /// @DnDArgument : "var_2" "projectile_count"
 /// @DnDArgument : "var_3" "crit_chance"
 /// @DnDArgument : "var_4" "knockback"
+/// @DnDArgument : "var_5" "projectile_scale"
+/// @DnDArgument : "var_6" "bounce_count"
 weapon_type = 1;
 attack_timer = 0;
 projectile_count = 1;
 crit_chance = 0.03;
 knockback = 20;
+projectile_scale = 1;
+bounce_count = 1;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1

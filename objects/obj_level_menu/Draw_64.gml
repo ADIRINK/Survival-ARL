@@ -74,9 +74,24 @@ draw_text(camx/2, 300, string("LEVEL UP!") + "");
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 4630BFC5
-/// @DnDArgument : "code" "// Draw three upgrade options$(13_10)var upgrade_names = ["+1 Projectile", "Faster Attack", "Damage Up", "More Range", "Penetration", "Crit Chance", "Speed Up", "Heal & HP", "Knockback"];$(13_10)$(13_10)// Set te(gw/2)t alignment to center$(13_10)draw_set_halign(fa_center);$(13_10)draw_set_valign(fa_middle);$(13_10)$(13_10)// Button 1$(13_10)if (selected == 0) draw_set_color(c_yellow);$(13_10)else draw_set_color(c_gray);$(13_10)draw_rectangle((gw/2) - 360, (gh/2) - 100, (gw/2) - 180, (gh/2) + 150, false);$(13_10)draw_set_color(c_white);$(13_10)draw_text((gw/2) - 270, (gh/2) + 25, upgrade_names[upgrade_1]); // Centered in button$(13_10)$(13_10)// Button 2$(13_10)if (selected == 1) draw_set_color(c_yellow);$(13_10)else draw_set_color(c_gray);$(13_10)draw_rectangle((gw/2) - 90, (gh/2) - 100, (gw/2) + 90, (gh/2) + 150, false);$(13_10)draw_set_color(c_white);$(13_10)draw_text((gw/2), (gh/2) + 25, upgrade_names[upgrade_2]); // Centered in button$(13_10)$(13_10)// Button 3$(13_10)if (selected == 2) draw_set_color(c_yellow);$(13_10)else draw_set_color(c_gray);$(13_10)draw_rectangle((gw/2) + 180, (gh/2) - 100, (gw/2) + 360, (gh/2) + 150, false);$(13_10)draw_set_color(c_white);$(13_10)draw_text((gw/2) + 270, (gh/2) + 25, upgrade_names[upgrade_3]); // Centered in button$(13_10)$(13_10)// Reset alignment$(13_10)draw_set_halign(fa_left);$(13_10)draw_set_valign(fa_top);"
+/// @DnDArgument : "code" "// Draw three upgrade options$(13_10)var upgrade_names = [$(13_10)    "+1 Projectile",    // 0$(13_10)    "Faster Attack",    // 1$(13_10)    "Damage Up",        // 2$(13_10)    "More Range",       // 3$(13_10)    "Penetration",      // 4$(13_10)    "Crit Chance",      // 5$(13_10)    "Speed Up",         // 6$(13_10)    "Heal & HP",        // 7$(13_10)    "Knockback",        // 8$(13_10)    "Lifesteal",        // 9$(13_10)    "Projectile Size",  // 10$(13_10)    "Max HP Up",        // 11$(13_10)	"Pick-up Range",	// 12$(13_10)	"Bouce"				// 13$(13_10)];$(13_10)$(13_10)// Set te(gw/2)t alignment to center$(13_10)draw_set_halign(fa_center);$(13_10)draw_set_valign(fa_middle);$(13_10)$(13_10)// Button 1$(13_10)if (selected == 0) draw_set_color(c_yellow);$(13_10)else draw_set_color(c_gray);$(13_10)draw_rectangle((gw/2) - 360, (gh/2) - 100, (gw/2) - 180, (gh/2) + 150, false);$(13_10)draw_set_color(c_white);$(13_10)draw_text((gw/2) - 270, (gh/2) + 25, upgrade_names[upgrade_1]); // Centered in button$(13_10)$(13_10)// Button 2$(13_10)if (selected == 1) draw_set_color(c_yellow);$(13_10)else draw_set_color(c_gray);$(13_10)draw_rectangle((gw/2) - 90, (gh/2) - 100, (gw/2) + 90, (gh/2) + 150, false);$(13_10)draw_set_color(c_white);$(13_10)draw_text((gw/2), (gh/2) + 25, upgrade_names[upgrade_2]); // Centered in button$(13_10)$(13_10)// Button 3$(13_10)if (selected == 2) draw_set_color(c_yellow);$(13_10)else draw_set_color(c_gray);$(13_10)draw_rectangle((gw/2) + 180, (gh/2) - 100, (gw/2) + 360, (gh/2) + 150, false);$(13_10)draw_set_color(c_white);$(13_10)draw_text((gw/2) + 270, (gh/2) + 25, upgrade_names[upgrade_3]); // Centered in button$(13_10)$(13_10)// Reset alignment$(13_10)draw_set_halign(fa_left);$(13_10)draw_set_valign(fa_top);"
 // Draw three upgrade options
-var upgrade_names = ["+1 Projectile", "Faster Attack", "Damage Up", "More Range", "Penetration", "Crit Chance", "Speed Up", "Heal & HP", "Knockback"];
+var upgrade_names = [
+    "+1 Projectile",    // 0
+    "Faster Attack",    // 1
+    "Damage Up",        // 2
+    "More Range",       // 3
+    "Penetration",      // 4
+    "Crit Chance",      // 5
+    "Speed Up",         // 6
+    "Heal & HP",        // 7
+    "Knockback",        // 8
+    "Lifesteal",        // 9
+    "Projectile Size",  // 10
+    "Max HP Up",        // 11
+	"Pick-up Range",	// 12
+	"Bouce"				// 13
+];
 
 // Set te(gw/2)t alignment to center
 draw_set_halign(fa_center);

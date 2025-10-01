@@ -133,5 +133,57 @@ function apply_upgrade(upgrade_type) {	/// @DnDAction : YoYo Games.Common.Appl
 				/// @DnDParent : 699D1FFE
 				/// @DnDArgument : "expr" "knockback * 1.5"
 				/// @DnDArgument : "var" "knockback"
-				knockback = knockback * 1.5;	break;}
+				knockback = knockback * 1.5;	break;
+		
+			/// @DnDAction : YoYo Games.Switch.Case
+			/// @DnDVersion : 1
+			/// @DnDHash : 35CF1411
+			/// @DnDParent : 658A4552
+			/// @DnDArgument : "const" "9"
+			case 9:	/// @DnDAction : YoYo Games.Common.Variable
+				/// @DnDVersion : 1
+				/// @DnDHash : 2B5E621B
+				/// @DnDParent : 35CF1411
+				/// @DnDArgument : "expr" "lifesteal_percent + 0.1"
+				/// @DnDArgument : "var" "lifesteal_percent"
+				lifesteal_percent = lifesteal_percent + 0.1;	break;
+		
+			/// @DnDAction : YoYo Games.Switch.Case
+			/// @DnDVersion : 1
+			/// @DnDHash : 36B01355
+			/// @DnDParent : 658A4552
+			/// @DnDArgument : "const" "10"
+			case 10:	/// @DnDAction : YoYo Games.Common.Variable
+				/// @DnDVersion : 1
+				/// @DnDHash : 027A3E27
+				/// @DnDParent : 36B01355
+				/// @DnDArgument : "expr" "projectile_scale + 0.13"
+				/// @DnDArgument : "var" "projectile_scale"
+				projectile_scale = projectile_scale + 0.13;	break;
+		
+			/// @DnDAction : YoYo Games.Switch.Case
+			/// @DnDVersion : 1
+			/// @DnDHash : 06D30993
+			/// @DnDParent : 658A4552
+			/// @DnDArgument : "const" "11"
+			case 11:	/// @DnDAction : YoYo Games.Common.Variable
+				/// @DnDVersion : 1
+				/// @DnDHash : 47C8BFA8
+				/// @DnDParent : 06D30993
+				/// @DnDArgument : "expr" "max_hp + 25"
+				/// @DnDArgument : "var" "max_hp"
+				max_hp = max_hp + 25;	break;
+		
+			/// @DnDAction : YoYo Games.Switch.Case
+			/// @DnDVersion : 1
+			/// @DnDHash : 1D39E147
+			/// @DnDParent : 658A4552
+			/// @DnDArgument : "const" "12"
+			case 12:	/// @DnDAction : YoYo Games.Common.Variable
+				/// @DnDVersion : 1
+				/// @DnDHash : 12B86CDC
+				/// @DnDParent : 1D39E147
+				/// @DnDArgument : "expr" "pickup_range + 25"
+				/// @DnDArgument : "var" "pickup_range"
+				pickup_range = pickup_range + 25;	break;}
 	}}

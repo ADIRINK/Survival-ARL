@@ -9,9 +9,9 @@
 /// @DnDArgument : "expr_4" "-1"
 /// @DnDArgument : "expr_5" "room_width/2"
 /// @DnDArgument : "expr_6" "room_height/2"
-/// @DnDArgument : "expr_7" "irandom(8)"
-/// @DnDArgument : "expr_8" "irandom(8)"
-/// @DnDArgument : "expr_9" "irandom(8)"
+/// @DnDArgument : "expr_7" "irandom(13)"
+/// @DnDArgument : "expr_8" "irandom(13)"
+/// @DnDArgument : "expr_9" "irandom(13)"
 /// @DnDArgument : "expr_10" "true"
 /// @DnDArgument : "expr_11" "view_camera[0]"
 /// @DnDArgument : "var" "menu_width"
@@ -33,9 +33,9 @@ button_height = 260;
 selected = -1;
 x = room_width/2;
 y = room_height/2;
-upgrade_1 = irandom(8);
-upgrade_2 = irandom(8);
-upgrade_3 = irandom(8);
+upgrade_1 = irandom(13);
+upgrade_2 = irandom(13);
+upgrade_3 = irandom(13);
 obj_room_controller.game_paused = true;
 cam = view_camera[0];
 
@@ -60,9 +60,9 @@ while ((upgrade_2 == upgrade_1)) {
 	/// @DnDVersion : 1
 	/// @DnDHash : 3F35921C
 	/// @DnDParent : 03616BB9
-	/// @DnDArgument : "expr" "irandom(8)"
+	/// @DnDArgument : "expr" "irandom(13)"
 	/// @DnDArgument : "var" "upgrade_2"
-	upgrade_2 = irandom(8);
+	upgrade_2 = irandom(13);
 }
 
 /// @DnDAction : YoYo Games.Loops.While_Loop
@@ -75,9 +75,9 @@ while ((upgrade_3 == upgrade_1)) {
 	/// @DnDVersion : 1
 	/// @DnDHash : 7A24906C
 	/// @DnDParent : 61C0B975
-	/// @DnDArgument : "expr" "irandom(8)"
+	/// @DnDArgument : "expr" "irandom(13)"
 	/// @DnDArgument : "var" "upgrade_3"
-	upgrade_3 = irandom(8);
+	upgrade_3 = irandom(13);
 }
 
 /// @DnDAction : YoYo Games.Loops.While_Loop
@@ -90,7 +90,7 @@ while ((upgrade_3 == upgrade_2)) {
 	/// @DnDVersion : 1
 	/// @DnDHash : 6A361E4C
 	/// @DnDParent : 1BF1AF58
-	/// @DnDArgument : "expr" "irandom(8)"
+	/// @DnDArgument : "expr" "irandom(13)"
 	/// @DnDArgument : "var" "upgrade_3"
-	upgrade_3 = irandom(8);
+	upgrade_3 = irandom(13);
 }

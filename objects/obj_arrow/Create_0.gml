@@ -1,25 +1,31 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 4E07ACCC
-/// @DnDInput : 6
+/// @DnDInput : 8
 /// @DnDArgument : "expr" "obj_player.current_damage"
 /// @DnDArgument : "expr_1" "obj_player.current_penetration"
 /// @DnDArgument : "expr_2" "obj_player.current_range"
 /// @DnDArgument : "expr_3" "8"
 /// @DnDArgument : "expr_4" "penetration"
 /// @DnDArgument : "expr_5" "ds_list_create()"
+/// @DnDArgument : "expr_6" "obj_player.projectile_scale"
+/// @DnDArgument : "expr_7" "obj_player.projectile_scale"
 /// @DnDArgument : "var" "damage"
 /// @DnDArgument : "var_1" "penetration"
 /// @DnDArgument : "var_2" "range_left"
 /// @DnDArgument : "var_3" "arrow_speed"
 /// @DnDArgument : "var_4" "hits_left"
 /// @DnDArgument : "var_5" "hit_enemies"
+/// @DnDArgument : "var_6" "image_xscale"
+/// @DnDArgument : "var_7" "image_yscale"
 damage = obj_player.current_damage;
 penetration = obj_player.current_penetration;
 range_left = obj_player.current_range;
 arrow_speed = 8;
 hits_left = penetration;
 hit_enemies = ds_list_create();
+image_xscale = obj_player.projectile_scale;
+image_yscale = obj_player.projectile_scale;
 
 /// @DnDAction : YoYo Games.Instances.If_Instance_Exists
 /// @DnDVersion : 1
