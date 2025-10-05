@@ -217,3 +217,21 @@ else{	/// @DnDAction : YoYo Games.Instances.Set_Alarm
 	/// @DnDParent : 5849910E
 	/// @DnDArgument : "steps" "spawn_delay"
 	alarm_set(0, spawn_delay);}
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 2B7706B6
+/// @DnDArgument : "code" "// In Alarm 0, replace spawn position logic:$(13_10)if (instance_exists(obj_level_generator)) {$(13_10)    var num_islands = ds_list_size(obj_level_generator.islands);$(13_10)    if (num_islands > 0) {$(13_10)        var random_island = ds_list_find_value($(13_10)            obj_level_generator.islands, $(13_10)            irandom(num_islands - 1)$(13_10)        );$(13_10)        $(13_10)        spawn_x = random_island.center_x + random_range(-50, 50);$(13_10)        spawn_y = random_island.center_y + random_range(-50, 50);$(13_10)    }$(13_10)}"
+// In Alarm 0, replace spawn position logic:
+if (instance_exists(obj_level_generator)) {
+    var num_islands = ds_list_size(obj_level_generator.islands);
+    if (num_islands > 0) {
+        var random_island = ds_list_find_value(
+            obj_level_generator.islands, 
+            irandom(num_islands - 1)
+        );
+        
+        spawn_x = random_island.center_x + random_range(-50, 50);
+        spawn_y = random_island.center_y + random_range(-50, 50);
+    }
+}
